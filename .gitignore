@@ -1,16 +1,2 @@
 
-TestServer/
-
-target/maven-status/maven-compiler-plugin/compile/default-compile/
-
 target/
-
-.flooignore
-
-.floo
-
-.idea/
-
-*.iml
-
-dependency-reduced-pom.xml
