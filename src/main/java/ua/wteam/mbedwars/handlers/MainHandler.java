@@ -9,62 +9,56 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerKickEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import ua.wteam.mbedwars.MBedWarsPlugin;
-import ua.wteam.mbedwars.actions.EventActionConsumer;
-
 import java.util.*;
+import java.util.function.Consumer;
 
 
 public class MainHandler implements Listener {
 
     private MBedWarsPlugin main;
-    private Map<String, List<EventActionConsumer>> listenersMap;
+    private Map<String, List<Consumer>> listenersMap;
 
 
-    public MainHandler(MBedWarsPlugin main){
+    public MainHandler(MBedWarsPlugin main) {
         this.main = main;
-        listenersMap = new HashMap<String, List<EventActionConsumer>>();
+        listenersMap = new HashMap<String, List<Consumer>>();
 
-        ///*****TEST
-        List<EventActionConsumer> actionList = new ArrayList<>();
-        actionList.add(event -> System.out.println(((BlockBreakEvent)event).getPlayer().getName()));
+        // TEST
+        List<Consumer> actionList = new ArrayList<>();
+        actionList.add(event -> System.out.println(((BlockBreakEvent) event).getPlayer().getName()));
         listenersMap.put("BlockBreakEvent", actionList);
         /**/
-
     }
 
-    public void handleEventAction(Event event){
-        Optional<List<EventActionConsumer>> listOptional =
-                Optional.ofNullable(listenersMap.get(event.getClass().getSimpleName()));
-        if (listOptional.isPresent()){
-            for (Object eventAction : listOptional.get()){
-                EventActionConsumer eventActionConsumer = (EventActionConsumer)eventAction;
-                eventActionConsumer.accept(event);
-            }
+    public void handleEventAction(Event event) {
+        List<Consumer> actions = listenersMap.get(event.getClass().getSimpleName());
+        if (actions != null) {
+            actions.forEach(action -> action.accept(event));
         }
     }
 
     @EventHandler
-    public void onPlayerJoin(PlayerJoinEvent event){
+    public void onPlayerJoin(PlayerJoinEvent event) {
         handleEventAction(event);
     }
 
     @EventHandler
-    public void onPlayerLeave(PlayerKickEvent event){
+    public void onPlayerLeave(PlayerKickEvent event) {
         handleEventAction(event);
     }
 
     @EventHandler
-    public void onPlayerQuit(PlayerQuitEvent event){
+    public void onPlayerQuit(PlayerQuitEvent event) {
         handleEventAction(event);
     }
 
     @EventHandler
-    public void onPlayerDeath(PlayerDeathEvent event){
+    public void onPlayerDeath(PlayerDeathEvent event) {
         handleEventAction(event);
     }
 
     @EventHandler
-    public void onBlockBreak(BlockBreakEvent event){
+    public void onBlockBreak(BlockBreakEvent event) {
         handleEventAction(event);
     }
 }

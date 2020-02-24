@@ -1,22 +1,20 @@
 package ua.wteam.mbedwars.timers;
 
-import ua.wteam.mbedwars.actions.Action;
-
 import java.util.concurrent.TimeUnit;
 
 public class ActionTimer{
 
-    private Action action;
-    private long time;
-    private TimeUnit timeUnit;
+    private final Runnable action;
+    private final long time;
+    private final TimeUnit timeUnit;
 
-    public ActionTimer(Action action, long time, TimeUnit unit){
+    public ActionTimer(Runnable action, long time, TimeUnit unit) {
         this.action = action;
         this.time = time;
         this.timeUnit = unit;
     }
 
-    public Action getAction() {
+    public Runnable getAction() {
         return action;
     }
 

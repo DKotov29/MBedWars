@@ -1,4 +1,4 @@
-package ua.wteam.mbedwars.game;
+package ua.wteam.mbedwars.services;
 
 import ua.wteam.mbedwars.timers.ActionTimer;
 
@@ -7,17 +7,17 @@ import java.util.concurrent.ScheduledExecutorService;
 
 public class ActionTimersService {
 
-    private static ScheduledExecutorService service;
+    private ScheduledExecutorService service;
 
-    public ActionTimersService(){
+    public ActionTimersService() {
         service = Executors.newSingleThreadScheduledExecutor();
     }
 
-    public static void sheduleTask(ActionTimer actionTimer){
+    public void sheduleTask(ActionTimer actionTimer) {
         service.schedule(actionTimer.getAction(), actionTimer.getTime(), actionTimer.getTimeUnit());
     }
 
-    public static void stopService(){
+    public void stopService() {
         service.shutdown();
     }
 

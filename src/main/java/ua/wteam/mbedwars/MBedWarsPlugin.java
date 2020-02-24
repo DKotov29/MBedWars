@@ -2,7 +2,7 @@ package ua.wteam.mbedwars;
 
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.annotation.plugin.Plugin;
-import ua.wteam.mbedwars.game.ActionTimersService;
+import ua.wteam.mbedwars.services.ActionTimersService;
 import ua.wteam.mbedwars.handlers.MainHandler;
 
 // todo старт игры командой
@@ -10,9 +10,11 @@ import ua.wteam.mbedwars.handlers.MainHandler;
 @Plugin(name = "MBedWars", version = "1.0")
 public class MBedWarsPlugin extends JavaPlugin {
 
+    private ActionTimersService actionTimersService;
+
     @Override
     public void onEnable() {
-        new ActionTimersService();
+        actionTimersService = new ActionTimersService();
         getServer().getPluginManager().registerEvents(new MainHandler(this), this);
 
 
@@ -32,6 +34,6 @@ public class MBedWarsPlugin extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        ActionTimersService.stopService();
+        actionTimersService.stopService();
     }
 }

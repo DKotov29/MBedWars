@@ -1,29 +1,25 @@
 package ua.wteam.mbedwars.game;
 
-public class Game implements IGame {
+public class Game {
 
-    GamePhase phase;
+    private GamePhase phase;
 
-    public Game(){
+    public Game() {
         phase = GamePhase.INLOBBY;
     }
 
-    @Override
     public void enterPrestarting() {
 
     }
 
-    @Override
     public void enterStarting() {
 
     }
 
-    @Override
     public void enterStarted() {
 
     }
 
-    @Override
     public void enterFinishing() {
 
     }

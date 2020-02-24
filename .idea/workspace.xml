@@ -8,35 +8,29 @@
       <change afterPath="$PROJECT_DIR$/../ConfigurationsApi/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ConfigurationsApi/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ConfigurationsApi/ConfigurationsApi.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/ActionTimersService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/IGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitattributes" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.travis.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CHANGELOG.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CONTRIBUTING.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestServer/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/plugins/MBedWars.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/plugins/MBedWars.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestServer/server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/server.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestServer/spigot.yml" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/spigot.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestServer/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/world/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/world/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/world/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world/session.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/session.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/session.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/actions/EventActionConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/actions/EventActionConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/MBedWarsPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/MBedWarsPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/actions/Action.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/actions/EventActionConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/ActionTimersService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/GameFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/GameFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/GamePhase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/GamePhase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/GameService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/IGame.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/handlers/MainHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/handlers/MainHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/timers/ActionTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/timers/ActionTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/timers/TimersFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/timers/TimersFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../config/checkstyle/checkstyle.xml" beforeDir="false" />
@@ -465,6 +459,7 @@
       <updated>1582488563140</updated>
       <workItem from="1582488564603" duration="4204000" />
       <workItem from="1582529947254" duration="2963000" />
+      <workItem from="1582549838440" duration="1994000" />
     </task>
     <servers />
   </component>
@@ -515,6 +510,8 @@
     <state x="324" y="248" key="com.intellij.ide.util.TipDialog/1920.1080" />
     <state x="540" y="139" key="com.intellij.testIntegration.createTest.CreateTestDialog" />
     <state x="540" y="139" key="com.intellij.testIntegration.createTest.CreateTestDialog/1920.1080" />
+    <state x="462" y="83" width="612" height="660" key="find.popup" />
+    <state x="462" y="83" width="612" height="660" key="find.popup/1920.1080" />
     <state x="431" y="147" width="672" height="680" key="search.everywhere.popup" />
     <state x="431" y="147" width="672" height="680" key="search.everywhere.popup/1920.1080" />
   </component>
