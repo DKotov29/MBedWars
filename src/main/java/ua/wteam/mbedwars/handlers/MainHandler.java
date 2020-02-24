@@ -8,34 +8,37 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerKickEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import ua.wteam.mbedwars.MBedWarsPlugin;
-import ua.wteam.mbedwars.actions.Action;
+import ua.wteam.mbedwars.actions.EventActionConsumer;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class MainHandler implements Listener {
 
     private MBedWarsPlugin main;
-    private Map<String, List<Action>> listenersMap;
+    private Map<String, List<EventActionConsumer>> listenersMap;
 
 
     public MainHandler(MBedWarsPlugin main){
         this.main = main;
         listenersMap = new HashMap<>();
+        //TEST
+        List<EventActionConsumer> actionList = new ArrayList<>();
+        actionList.add(event -> System.out.println(event.getEventName()));
+        listenersMap.put("PlayerJoinEvent", actionList);
 
     }
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event){
-        List<Action> actions = listenersMap.get(event.getClass().getName());
-        if (actions.isEmpty() || actions == null){
-            System.out.println("0");
+        Optional<List> listOptional = Optional.ofNullable(listenersMap.get(event.getClass().getName()));
 
+        System.out.println(event.getClass().getName());
+        if (listOptional.isPresent()){
+            for ( Object eventAction : listOptional.get()){
+                EventActionConsumer eventActionConsumer = (EventActionConsumer)eventAction;
+                eventActionConsumer.accept(event);
+            }
         }
-      /*  for( Action a :  ){
-            a.run();
-        }*/
     }
 
     @EventHandler
