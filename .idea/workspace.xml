@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8e418de2-c4a2-4e91-862d-643751c6b5aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../CirceSinusoidalEffects/CirceSinusoidalEffects.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConfigurationsApi/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConfigurationsApi/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConfigurationsApi/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConfigurationsApi/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConfigurationsApi/ConfigurationsApi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/ActionTimersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/IGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/plugins/MBedWars.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/plugins/MBedWars.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/server.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/spigot.yml" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/spigot.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/DIM-1/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_nether/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_nether/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/DIM1/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/world_the_end/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/world_the_end/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/actions/EventActionConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/actions/EventActionConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/handlers/MainHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/handlers/MainHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/checkstyle/checkstyle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/checkstyle/header.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/checkstyle/import-control.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/checkstyle/suppressions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../start.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/LocalPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/WorldGuard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/Blacklist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/BlacklistEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/BlacklistLoggerHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/MatcherIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/TrackedEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/action/Action.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/action/ActionResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/action/ActionType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/action/AllowAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/action/BanAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/action/DenyAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/action/KickAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/action/LogAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/action/NotifyAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/action/RepeatGuardedAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/action/TellAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/event/AbstractBlacklistEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/event/BlacklistEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/event/BlockBlacklistEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/event/BlockBreakBlacklistEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/event/BlockDispenseBlacklistEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/event/BlockInteractBlacklistEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/event/BlockPlaceBlacklistEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/event/EventType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/event/ItemAcquireBlacklistEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/event/ItemBlacklistEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/event/ItemDestroyWithBlacklistEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/event/ItemDropBlacklistEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/event/ItemUseBlacklistEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/logger/ConsoleHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/logger/DatabaseHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/logger/FileHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/logger/LogFileWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/logger/LoggerHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/target/BlockMatcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/target/BlockTarget.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/target/ItemBlockMatcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/target/ItemMatcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/target/ItemTarget.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/target/Target.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/target/TargetMatcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/target/TargetMatcherParseException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/blacklist/target/TargetMatcherParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/chest/ChestProtection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/chest/SignChestProtection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/commands/CommandUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/commands/DebuggingCommands.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/commands/GeneralCommands.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/commands/ProtectionCommands.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/commands/ToggleCommands.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/commands/WorldGuardCommands.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/commands/region/MemberCommands.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/commands/region/RegionCommands.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/commands/region/RegionCommandsBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/commands/region/RegionPrintoutBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/commands/task/RegionAdder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/commands/task/RegionLister.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/commands/task/RegionManagerReloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/commands/task/RegionManagerSaver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/commands/task/RegionRemover.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/config/ConfigurationManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/config/WorldConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/config/YamlConfigurationManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/config/YamlWorldConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/domains/Association.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/domains/DefaultDomain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/domains/Domain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/domains/GroupDomain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/domains/PlayerDomain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/internal/PermissionModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/internal/permission/AbstractPermissionModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/internal/permission/RegionPermissionModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/internal/platform/DebugHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/internal/platform/StringMatcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/internal/platform/WorldGuardPlatform.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/internal/util/sql/StatementUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/AbstractRegionSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/ApplicableRegionSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/DelayedRegionOverlapAssociation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/FailedLoadRegionSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/FlagValueCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/PermissiveRegionSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/RegionResultSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/association/Associables.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/association/ConstantAssociation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/association/RegionAssociable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/association/RegionOverlapAssociation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/BooleanFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/BuildFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/CommandStringFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/DoubleFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/EntityTypeFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/EnumFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/Flag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/FlagContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/FlagUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/Flags.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/GameModeTypeFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/IntegerFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/InvalidFlagFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/LazyLocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/LocationFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/MapFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/RegionGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/RegionGroupFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/SetFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/StateFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/StringFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/TimestampFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/VectorFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/WeatherTypeFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/registry/FlagConflictException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/registry/FlagRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/registry/SimpleFlagRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/flags/registry/UnknownFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/RegionContainerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/RegionDifference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/RegionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/RemovalStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/index/AbstractRegionIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/index/ChunkHashTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/index/ConcurrentRegionIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/index/HashMapIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/index/PriorityRTreeIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/index/RegionIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/migration/AbstractMigration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/migration/DriverMigration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/migration/Migration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/migration/MigrationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/migration/UUIDMigration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/DifferenceSaveException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/DriverType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/MemoryRegionDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/RegionDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/RegionDatabaseUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/RegionDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/StorageException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/file/DirectoryYamlDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/file/YamlRegionFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/sql/DataLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/sql/DataUpdater.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/sql/DomainTableCache.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/sql/RegionInserter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/sql/RegionRemover.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/sql/RegionUpdater.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/sql/SQLDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/sql/SQLRegionDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/sql/StatementBatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/managers/storage/sql/TableCache.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/regions/GlobalProtectedRegion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/regions/ProtectedCuboidRegion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/regions/ProtectedPolygonalRegion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/regions/ProtectedRegion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/regions/ProtectedRegionMBRConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/regions/QueryCache.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/regions/RegionContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/regions/RegionQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/regions/RegionType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/util/DomainInputResolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/util/NormativeOrders.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/util/RegionCollectionConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/protection/util/UnresolvedNamesException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/AbstractSessionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/MoveType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/Session.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/SessionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/WorldPlayerTuple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/handler/EntryFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/handler/ExitFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/handler/FarewellFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/handler/FeedFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/handler/FlagValueChangeHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/handler/GameModeFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/handler/GodMode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/handler/GreetingFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/handler/Handler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/handler/HealFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/handler/InvincibilityFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/handler/NotifyEntryFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/handler/NotifyExitFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/handler/TimeLockFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/handler/WaterBreathing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/session/handler/WeatherLockFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/ChangeTracked.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/Entities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/Enums.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/Locations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/MathUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/Normal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/SpongeUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/WorldGuardExceptionConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/collect/EntryBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/collect/LongBaseHashTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/collect/LongHash.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/collect/LongHashSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/collect/LongHashTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/command/CommandFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/concurrent/EvenMoreExecutors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/io/Closer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/logging/LoggerToChatHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/logging/RecordMessagePrefixer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/profiler/SamplerBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/profiler/StackNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/profiler/StackTraceNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/profiler/ThreadIdFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/profiler/ThreadNameFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/report/ConfigReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/report/RegionReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/main/java/com/sk89q/worldguard/util/sql/DataSourceConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/TestPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/domains/DefaultDomainTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/protection/ApplicableRegionSetTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/protection/FlagValueCalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/protection/HashMapIndexPriorityTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/protection/HashMapIndexRegionOverlapTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/protection/HashMapIndexRemovalTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/protection/HashMapIndexTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/protection/MockApplicableRegionSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/protection/PriorityRTreeIndexTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/protection/PriorityRTreeRegionEntryExitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/protection/PriorityRTreeRegionOverlapTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/protection/PriorityRTreeRegionPriorityTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/protection/RegionEntryExitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/protection/RegionOverlapTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/protection/RegionPriorityTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/protection/regions/RegionIntersectTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-core/src/test/java/com/sk89q/worldguard/util/CommandFilterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/INSTALL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/UPGRADE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/contrib/blacklist_table.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/contrib/region_manual_update_20110325.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/BukkitConfigurationManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/BukkitDebugHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/BukkitOfflinePlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/BukkitPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/BukkitRegionContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/BukkitStringMatcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/BukkitUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/BukkitWorldConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/BukkitWorldGuardPlatform.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/ProtectionQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/WorldGuardPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/cause/Cause.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/chest/BukkitSignChestProtection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/BulkEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/DelegateEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/DelegateEvents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/Handleable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/block/AbstractBlockEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/block/BreakBlockEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/block/PlaceBlockEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/block/UseBlockEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/debug/CancelAttempt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/debug/CancelLogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/debug/CancelLogging.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/debug/LoggingBlockBreakEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/debug/LoggingBlockPlaceEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/debug/LoggingEntityDamageByEntityEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/debug/LoggingPlayerInteractEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/entity/AbstractEntityEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/entity/DamageEntityEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/entity/DestroyEntityEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/entity/SpawnEntityEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/entity/UseEntityEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/inventory/UseItemEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/event/player/ProcessPlayerEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/internal/TargetMatcherSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/internal/WGMetadata.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/AbstractListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/BlacklistListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/BlockStateAsBlockFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/BlockedPotionsListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/BuildPermissionListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/ChestProtectionListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/DebuggingListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/EventAbstractionListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/InvincibilityListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/PlayerModesListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/PlayerMoveListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/RegionFlagsListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/RegionProtectionListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/WorldGuardBlockListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/WorldGuardCommandBookListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/WorldGuardEntityListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/WorldGuardHangingListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/WorldGuardPlayerListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/WorldGuardServerListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/WorldGuardVehicleListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/WorldGuardWeatherListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/WorldGuardWorldListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/WorldRulesListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/debounce/BlockPistonExtendKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/debounce/BlockPistonRetractKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/debounce/EventDebounce.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/debounce/legacy/AbstractEventDebounce.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/debounce/legacy/BlockEntityEventDebounce.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/debounce/legacy/EntityEntityEventDebounce.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/listener/debounce/legacy/InventoryMoveItemEventDebounce.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/protection/events/DisallowedPVPEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/protection/events/flags/FlagContextCreateEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/session/BukkitSessionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/util/Blocks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/util/Entities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/util/Events.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/util/HandlerTracer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/util/InteropUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/util/Materials.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/util/logging/ClassSourceValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/util/report/CancelReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/util/report/PerformanceReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/util/report/PluginReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/util/report/SchedulerReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/util/report/ServerReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/util/report/ServicesReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/java/com/sk89q/worldguard/bukkit/util/report/WorldReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/resources/defaults/blacklist.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/resources/defaults/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/resources/defaults/config_world.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/resources/migrations/region/mysql/V1__Initial.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/resources/migrations/region/mysql/V2__Bug_fix_and_UUID.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/resources/migrations/region/sqlite/V1__Initial.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-legacy/src/main/resources/plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../worldguard-sponge/build.gradle" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\Danya\IdeaProjects\MBedWars\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="local" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YDsae8n2CQDDepobK9NIMUbMGz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="JarApplication" nameIsGenerated="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/TestServer/spigot-1.12.2.jar" />
+      <option name="WORKING_DIRECTORY" value="D:\Danya\IdeaProjects\MBedWars\TestServer" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean package " />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8e418de2-c4a2-4e91-862d-643751c6b5aa" name="Default Changelist" comment="" />
+      <created>1582488563140</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582488563140</updated>
+      <workItem from="1582488564603" duration="4204000" />
+      <workItem from="1582529947254" duration="2963000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.1080" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/1920.1080" />
+    <state x="426" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" />
+    <state x="426" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.1080" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.1080" />
+    <state x="394" y="7" key="CommitChangelistDialog2" />
+    <state x="394" y="7" key="CommitChangelistDialog2/1920.1080" />
+    <state x="147" y="64" key="DiffContextDialog" />
+    <state x="147" y="64" key="DiffContextDialog/1920.1080" />
+    <state x="551" y="67" key="FileChooserDialogImpl" />
+    <state x="551" y="67" key="FileChooserDialogImpl/1920.1080" />
+    <state x="501" y="285" key="GitCloneDialog" />
+    <state x="501" y="285" key="GitCloneDialog/1920.1080" />
+    <state width="1490" height="205" key="GridCell.Tab.0.bottom" />
+    <state width="1490" height="205" key="GridCell.Tab.0.bottom/1920.1080" />
+    <state width="1490" height="205" key="GridCell.Tab.0.center" />
+    <state width="1490" height="205" key="GridCell.Tab.0.center/1920.1080" />
+    <state width="1490" height="205" key="GridCell.Tab.0.left" />
+    <state width="1490" height="205" key="GridCell.Tab.0.left/1920.1080" />
+    <state width="1490" height="205" key="GridCell.Tab.0.right" />
+    <state width="1490" height="205" key="GridCell.Tab.0.right/1920.1080" />
+    <state x="274" y="0" key="SettingsEditor" />
+    <state x="274" y="0" key="SettingsEditor/1920.1080" />
+    <state x="324" y="248" key="com.intellij.ide.util.TipDialog" />
+    <state x="324" y="248" key="com.intellij.ide.util.TipDialog/1920.1080" />
+    <state x="540" y="139" key="com.intellij.testIntegration.createTest.CreateTestDialog" />
+    <state x="540" y="139" key="com.intellij.testIntegration.createTest.CreateTestDialog/1920.1080" />
+    <state x="431" y="147" width="672" height="680" key="search.everywhere.popup" />
+    <state x="431" y="147" width="672" height="680" key="search.everywhere.popup/1920.1080" />
+  </component>
+</project>
