@@ -6,8 +6,8 @@ public class GameService {
 
     private Game game;
 
-    public GameService(){
-        this.game = new Game();
+    public GameService(int teamsAmount, int playerPerTeam){
+        this.game = new Game(teamsAmount, playerPerTeam);
     }
 
     public Game getGame() {
