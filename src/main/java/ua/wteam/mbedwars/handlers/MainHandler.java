@@ -15,23 +15,24 @@ import java.util.function.Consumer;
 public class MainHandler implements Listener {
 
     private MBedWarsPlugin main;
-    private Map<String, List<Consumer>> listenersMap;
+    private Map<String, List<Consumer<Event>>> listenersMap;
 
 
     public MainHandler(MBedWarsPlugin main) {
         this.main = main;
-        listenersMap = new HashMap<String, List<Consumer>>();
+        listenersMap = new HashMap<String, List<Consumer<Event>>>();
 
-        // TEST
-        List<Consumer> actionList = new ArrayList<>();
-        actionList.add(event -> System.out.println(((BlockBreakEvent) event).getPlayer().getName()));
-        listenersMap.put("BlockBreakEvent", actionList);
-        /**/
+        addHandleEventAction("PlayerJoinEvent", event -> {
+            PlayerJoinEvent event1 = (PlayerJoinEvent) event;
+            event1.getPlayer().sendMessage("Welcome to the club Buddy");
+
+        });
+
     }
 
-    public void addHandleEventAction(String eventName, Consumer action) {
+    public void addHandleEventAction(String eventName, Consumer<Event> action) {
         if (listenersMap.get(eventName) == null) {
-            List<Consumer> actionList = new ArrayList<>();
+            List<Consumer<Event>> actionList = new ArrayList<>();
             actionList.add(action);
             listenersMap.put(eventName, actionList);
         } else {
@@ -40,7 +41,7 @@ public class MainHandler implements Listener {
     }
 
     public void handleEventAction(Event event) {
-        List<Consumer> actions = listenersMap.get(event.getClass().getSimpleName());
+        List<Consumer<Event>> actions = listenersMap.get(event.getClass().getSimpleName());
         if (actions != null) {
             actions.forEach(action -> action.accept(event));
         }
@@ -49,21 +50,25 @@ public class MainHandler implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
         handleEventAction(event);
+        return;
     }
 
     @EventHandler
     public void onPlayerLeave(PlayerKickEvent event) {
         handleEventAction(event);
+        return;
     }
 
     @EventHandler
     public void onPlayerQuit(PlayerQuitEvent event) {
         handleEventAction(event);
+        return;
     }
 
     @EventHandler
     public void onPlayerDeath(PlayerDeathEvent event) {
         handleEventAction(event);
+        return;
     }
 
     @EventHandler
