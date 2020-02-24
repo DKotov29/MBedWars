@@ -15,22 +15,10 @@
       <change beforePath="$PROJECT_DIR$/../CONTRIBUTING.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../LICENSE.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/server.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/spigot.yml" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/spigot.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestServer/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/MBedWarsPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/MBedWarsPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/actions/Action.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/actions/EventActionConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/ActionTimersService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/GameFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/GameFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/GamePhase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/GamePhase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/GameService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/game/IGame.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/handlers/MainHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/handlers/MainHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/services/ActionTimersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/services/ActionTimersService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/timers/ActionTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/timers/ActionTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/timers/TimersFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/timers/TimersFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/wteam/mbedwars/timers/TimersFactory.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../config/checkstyle/checkstyle.xml" beforeDir="false" />

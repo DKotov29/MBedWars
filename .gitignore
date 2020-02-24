@@ -1,14 +1,4 @@
 
 target/
-
-TestServer/logs/
-
-TestServer/world_the_end/DIM1/region/
-
-TestServer/world_nether/
-
-TestServer/world/
-
-TestServer/world_the_end/
-
-TestServer/plugins/
+.idea/
+TestServer/

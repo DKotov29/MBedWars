@@ -12,7 +12,6 @@ import ua.wteam.mbedwars.MBedWarsPlugin;
 import java.util.*;
 import java.util.function.Consumer;
 
-
 public class MainHandler implements Listener {
 
     private MBedWarsPlugin main;
@@ -28,6 +27,16 @@ public class MainHandler implements Listener {
         actionList.add(event -> System.out.println(((BlockBreakEvent) event).getPlayer().getName()));
         listenersMap.put("BlockBreakEvent", actionList);
         /**/
+    }
+
+    public void addHandleEventAction(String eventName, Consumer action) {
+        if (listenersMap.get(eventName) == null) {
+            List<Consumer> actionList = new ArrayList<>();
+            actionList.add(action);
+            listenersMap.put(eventName, actionList);
+        } else {
+            listenersMap.get(eventName).add(action);
+        }
     }
 
     public void handleEventAction(Event event) {

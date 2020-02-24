@@ -17,6 +17,10 @@ public class ActionTimersService {
         service.schedule(actionTimer.getAction(), actionTimer.getTime(), actionTimer.getTimeUnit());
     }
 
+    public void sheduleRepeatingTask(ActionTimer actionTimer) {
+        service.scheduleAtFixedRate(actionTimer.getAction(), actionTimer.getTime(), actionTimer.getRepeatingPeriod(), actionTimer.getTimeUnit());
+    }
+
     public void stopService() {
         service.shutdown();
     }
