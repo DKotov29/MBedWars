@@ -1,0 +1,15 @@
+game_preferences:
+
+  teams_amount: 4
+
+  players_per_team: 4
+
+base_coordinates: #coords of bases, equal to core
+  - '[0;50;100]'
+  - '[0;50;-100]'
+  - '[100;50;0]'
+  - '[-100;50;0]'
+
+
+
+

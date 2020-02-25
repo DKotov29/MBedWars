@@ -2,8 +2,8 @@ package ua.wteam.mbedwars;
 
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.annotation.plugin.Plugin;
-import ua.wteam.mbedwars.services.ActionTimersService;
 import ua.wteam.mbedwars.handlers.MainHandler;
+import ua.wteam.mbedwars.services.ActionTimersService;
 
 // todo старт игры командой
 
@@ -14,9 +14,23 @@ public class MBedWarsPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        saveDefaultConfig();
         actionTimersService = new ActionTimersService();
         getServer().getPluginManager().registerEvents(new MainHandler(this), this);
 
+        /// TEST
+        //List<String> baseCoords = new ArrayList<>();
+        //baseCoords.add(new Coords(0, 100, 50).toString());
+        //baseCoords.add(new Coords(0, -100, 50).toString());
+        //baseCoords.add(new Coords(100, 0, 50).toString());
+        //baseCoords.add(new Coords(-100, 0, 50).toString());
+        //getConfig().set("base_coordinates", baseCoords);
+        //saveConfig();
+        //List<String> coords = (List<String>) getConfig().getList("base_coordinates");
+        //List<Coords> coordsList = new ArrayList<>();
+        //coords.forEach(coord -> coordsList.add(new CoordsUtils().getFromString(coord)));
+        //coordsList.forEach(System.out::println);
+        /// TEST
 
         //++ загрузка карты,
         // найти спец блоки - генераторы, запомнить корды и тип генераторов
@@ -34,6 +48,7 @@ public class MBedWarsPlugin extends JavaPlugin {
 
     @Override
     public void onDisable() {
+        saveConfig();
         actionTimersService.stopService();
     }
 }
