@@ -18,6 +18,12 @@ public class MBedWarsPlugin extends JavaPlugin {
         actionTimersService = new ActionTimersService();
         getServer().getPluginManager().registerEvents(new MainHandler(this), this);
 
+
+/*
+        String[] strings = getConfig().getString("magic_cores_types").split(";");
+        for (String s : strings){
+            System.out.println(getConfig().getString("magic_cores." + s + ".manaPerTick"));
+        }*/
         /// TEST
         //List<String> baseCoords = new ArrayList<>();
         //baseCoords.add(new Coords(0, 100, 50).toString());

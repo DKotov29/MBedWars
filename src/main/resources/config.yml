@@ -12,35 +12,35 @@ base_coordinates: #coords of bases, equal to cores, amount of rows must be as ga
   - '[100;50;0]'
   - '[-100;50;0]'
 
-magic_cores_types: "level_1,level_2,level_3"
+magic_cores_types: "level_1;level_2;level_3"
 
-magic_cores_settings:
-    level_1:
-      manaPerTick: 1
-      radius:
-    level_2:
-      manaPerTick:
-      radius:
-    level_3:
-      manaPerTick:
-      radius:
-
-magic_cores_coords:
-  level_1: # team cores
-    - '[0;50;100]'
-    - '[0;50;-100]'
-    - '[100;50;0]'
-    - '[-100;50;0]'
+magic_cores:
+  level_1: # if base_coordinates_equal_to_core equals here base_coordinates doesnt needed
+    coords:
+      - '[0;50;100]'
+      - '[0;50;-100]'
+      - '[100;50;0]'
+      - '[-100;50;0]'
+    manaPerTick: 1
+    radius: 10
   level_2:
-    - '[0;50;75]'
-    - '[0;50;-75]'
-    - '[75;50;0]'
-    - '[-75;50;0]'
+    coords:
+      - '[0;50;75]'
+      - '[0;50;-75]'
+      - '[75;50;0]'
+      - '[-75;50;0]'
+    manaPerTick: 5
+    radius: 7
   level_3:
-    - '[0;50;10]'
-    - '[0;50;-10]'
-    - '[10;50;0]'
-    - '[-10;50;0]'
+    coords:
+      - '[0;50;10]'
+      - '[0;50;-10]'
+      - '[10;50;0]'
+      - '[-10;50;0]'
+    manaPerTick: 10
+    radius: 4
+
+
 
 
 
