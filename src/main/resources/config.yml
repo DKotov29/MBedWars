@@ -4,11 +4,44 @@ game_preferences:
 
   players_per_team: 4
 
-base_coordinates: #coords of bases, equal to core
+base_coordinates_equal_to_core: false
+
+base_coordinates: #coords of bases, equal to cores, amount of rows must be as game_preferences.teams_amount
   - '[0;50;100]'
   - '[0;50;-100]'
   - '[100;50;0]'
   - '[-100;50;0]'
+
+magic_cores_types: "level_1,level_2,level_3"
+
+magic_cores_settings:
+    level_1:
+      manaPerTick: 1
+      radius:
+    level_2:
+      manaPerTick:
+      radius:
+    level_3:
+      manaPerTick:
+      radius:
+
+magic_cores_coords:
+  level_1: # team cores
+    - '[0;50;100]'
+    - '[0;50;-100]'
+    - '[100;50;0]'
+    - '[-100;50;0]'
+  level_2:
+    - '[0;50;75]'
+    - '[0;50;-75]'
+    - '[75;50;0]'
+    - '[-75;50;0]'
+  level_3:
+    - '[0;50;10]'
+    - '[0;50;-10]'
+    - '[10;50;0]'
+    - '[-10;50;0]'
+
 
 
 
