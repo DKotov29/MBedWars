@@ -1,5 +1,6 @@
 package ua.wteam.mbedwars.handlers;
 
+import org.bukkit.Material;
 import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -8,7 +9,12 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerKickEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 import ua.wteam.mbedwars.MBedWarsPlugin;
+import ua.wteam.mbedwars.kits.Kit;
+import ua.wteam.mbedwars.services.KitService;
+
 import java.util.*;
 import java.util.function.Consumer;
 
@@ -17,14 +23,30 @@ public class MainHandler implements Listener {
     private MBedWarsPlugin main;
     private Map<String, List<Consumer<Event>>> listenersMap;
 
+    private KitService kitService;
+
 
     public MainHandler(MBedWarsPlugin main) {
         this.main = main;
         listenersMap = new HashMap<String, List<Consumer<Event>>>();
+        this.kitService = new KitService(main);
 
         addHandleEventAction("PlayerJoinEvent", event -> {
             PlayerJoinEvent event1 = (PlayerJoinEvent) event;
-            event1.getPlayer().sendMessage("Welcome to the club Buddy");
+
+//            //// TEST
+//            ArrayList<ItemStack> kitItems = new ArrayList<>();
+//
+//            ItemStack itemStack = new ItemStack(Material.COAL_ORE);
+//            ItemMeta itemMeta = itemStack.getItemMeta();
+//            itemMeta.setDisplayName("§cTest kit");
+//            itemStack.setItemMeta(itemMeta);
+//
+//            kitItems.add(itemStack);
+//
+//            Kit kit = Kit.newBuilder().add(kitItems).build();
+//
+//            kitService.setKit(kit, event1.getPlayer());
 
         });
 
@@ -50,25 +72,21 @@ public class MainHandler implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
         handleEventAction(event);
-        return;
     }
 
     @EventHandler
     public void onPlayerLeave(PlayerKickEvent event) {
         handleEventAction(event);
-        return;
     }
 
     @EventHandler
     public void onPlayerQuit(PlayerQuitEvent event) {
         handleEventAction(event);
-        return;
     }
 
     @EventHandler
     public void onPlayerDeath(PlayerDeathEvent event) {
         handleEventAction(event);
-        return;
     }
 
     @EventHandler

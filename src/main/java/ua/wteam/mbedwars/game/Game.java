@@ -7,12 +7,12 @@ public class Game {
     private GamePhase phase;
 
     public Game(int teamsAmount, int playerPerTeam) {
-        phase = GamePhase.INLOBBY;
+        phase = GamePhase.IN_LOBBY;
         this.teamsAmount = teamsAmount;
         this.playerPerTeam = playerPerTeam;
     }
 
-    public void enterPrestarting() {
+    public void enterPreStarting() {
 
     }
 

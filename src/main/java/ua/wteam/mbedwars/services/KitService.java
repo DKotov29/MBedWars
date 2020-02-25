@@ -1,6 +1,8 @@
 package ua.wteam.mbedwars.services;
 
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
 import ua.wteam.mbedwars.MBedWarsPlugin;
 import ua.wteam.mbedwars.kits.Kit;
 
@@ -12,7 +14,9 @@ public class KitService {
         this.main = main;
     }
 
-    public void giveKit(Kit kit, Player player){
-
+    public void setKit(Kit kit, Player player){
+        Inventory inventory = player.getInventory();
+        inventory.clear();
+        kit.getItems().forEach(inventory::addItem);
     }
 }

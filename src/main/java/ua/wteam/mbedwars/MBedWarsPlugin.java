@@ -1,9 +1,17 @@
 package ua.wteam.mbedwars;
 
+import org.bukkit.Material;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.annotation.plugin.Plugin;
 import ua.wteam.mbedwars.handlers.MainHandler;
+import ua.wteam.mbedwars.kits.Kit;
 import ua.wteam.mbedwars.services.ActionTimersService;
+import ua.wteam.mbedwars.services.KitService;
+
+import java.util.ArrayList;
+import java.util.List;
 
 // todo старт игры командой
 
@@ -18,6 +26,7 @@ public class MBedWarsPlugin extends JavaPlugin {
         actionTimersService = new ActionTimersService();
         getServer().getPluginManager().registerEvents(new MainHandler(this), this);
 
+
         /// TEST
         //List<String> baseCoords = new ArrayList<>();
         //baseCoords.add(new Coords(0, 100, 50).toString());
@@ -31,9 +40,10 @@ public class MBedWarsPlugin extends JavaPlugin {
         //coords.forEach(coord -> coordsList.add(new CoordsUtils().getFromString(coord)));
         //coordsList.forEach(System.out::println);
         /// TEST
-
+        //
         //++ загрузка карты,
         // найти спец блоки - генераторы, запомнить корды и тип генераторов
+        //
         // при заходе игроков кидать в "лобби" вверху карты, нет возможности ламать ничего, в лобби на голограммах описана игра
         // сервис который проверяет можно ли запустить игру
         //... ожидание 16 игроков, во время этого можно выбрать команду, 3 перка, кит с помощью gui
