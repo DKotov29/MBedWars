@@ -34,19 +34,19 @@ public class MainHandler implements Listener {
         addHandleEventAction("PlayerJoinEvent", event -> {
             PlayerJoinEvent event1 = (PlayerJoinEvent) event;
 
-//            //// TEST
-//            ArrayList<ItemStack> kitItems = new ArrayList<>();
-//
-//            ItemStack itemStack = new ItemStack(Material.COAL_ORE);
-//            ItemMeta itemMeta = itemStack.getItemMeta();
-//            itemMeta.setDisplayName("§cTest kit");
-//            itemStack.setItemMeta(itemMeta);
-//
-//            kitItems.add(itemStack);
-//
-//            Kit kit = Kit.newBuilder().add(kitItems).build();
-//
-//            kitService.setKit(kit, event1.getPlayer());
+            //// TEST
+            ArrayList<ItemStack> kitItems = new ArrayList<>();
+
+            ItemStack itemStack = new ItemStack(Material.COAL_ORE);
+            ItemMeta itemMeta = itemStack.getItemMeta();
+            itemMeta.setDisplayName("§cTest kit");
+            itemStack.setItemMeta(itemMeta);
+
+            kitItems.add(itemStack);
+
+            Kit kit = Kit.newBuilder().addItems(kitItems).addItem(new ItemStack(Material.CARROT_ITEM)).addItem(Material.COAL).build();
+
+            kitService.setKit(kit, event1.getPlayer());
 
         });
 
