@@ -13,11 +13,11 @@ public class ActionTimersService {
         service = Executors.newSingleThreadScheduledExecutor();
     }
 
-    public void sheduleTask(ActionTimer actionTimer) {
+    public void scheduleTask(ActionTimer actionTimer) {
         service.schedule(actionTimer.getAction(), actionTimer.getTime(), actionTimer.getTimeUnit());
     }
 
-    public void sheduleRepeatingTask(ActionTimer actionTimer) {
+    public void scheduleRepeatingTask(ActionTimer actionTimer) {
         service.scheduleAtFixedRate(actionTimer.getAction(), actionTimer.getTime(), actionTimer.getRepeatingPeriod(), actionTimer.getTimeUnit());
     }
 
