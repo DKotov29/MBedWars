@@ -1,40 +1,29 @@
 package ua.wteam.mbedwars.kits;
 
-
-import java.util.List;
-import java.util.ArrayList;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.Inventory;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Kit {
+
     private List<ItemStack> items;
 
-    public class Builder{
-    }
-
-        return new Kit().new Builder();
-
-    public static Builder newBuilder() {
-    }
-    public List<ItemStack> getItems() {
-        return items;
-
-        public Builder addItems(List<ItemStack> items){
-            Kit.this.items = items;
-            return this;
-        }
-
-        public Kit build(){
-            return Kit.this;
-        }
-    }
-
-    List<ItemStack> itemsList;
 
     public Kit() {
-        itemsList = new ArrayList<>();
+        items = new ArrayList<>();
+    }
+
+    public static Builder newBuilder() {
+        return new Kit().new Builder();
+    }
+
+    public List<ItemStack> getItems() {
+        return items;
     }
 
     public class Builder {
+
+        List<ItemStack> itemsList;
 
         public Builder addItems(List<ItemStack> items){
             Kit.this.items = items;
