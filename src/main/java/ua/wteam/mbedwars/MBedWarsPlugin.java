@@ -1,17 +1,10 @@
 package ua.wteam.mbedwars;
 
-import org.bukkit.Material;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.annotation.plugin.Plugin;
 import ua.wteam.mbedwars.handlers.MainHandler;
-import ua.wteam.mbedwars.kits.Kit;
 import ua.wteam.mbedwars.services.ActionTimersService;
-import ua.wteam.mbedwars.services.KitService;
-
-import java.util.ArrayList;
-import java.util.List;
+import ua.wteam.mbedwars.services.PerkService;
 
 // todo старт игры командой
 
@@ -19,28 +12,19 @@ import java.util.List;
 public class MBedWarsPlugin extends JavaPlugin {
 
     private ActionTimersService actionTimersService;
+    private MainHandler mainHandler;
+    private PerkService perkService;
 
     @Override
     public void onEnable() {
         saveDefaultConfig();
         actionTimersService = new ActionTimersService();
-        getServer().getPluginManager().registerEvents(new MainHandler(this), this);
+        mainHandler = new MainHandler(this);
+        getServer().getPluginManager().registerEvents(mainHandler, this);
+        perkService = new PerkService(this);
 
 
-        /// TEST
-        //List<String> baseCoords = new ArrayList<>();
-        //baseCoords.add(new Coords(0, 100, 50).toString());
-        //baseCoords.add(new Coords(0, -100, 50).toString());
-        //baseCoords.add(new Coords(100, 0, 50).toString());
-        //baseCoords.add(new Coords(-100, 0, 50).toString());
-        //getConfig().set("base_coordinates", baseCoords);
-        //saveConfig();
-        //List<String> coords = (List<String>) getConfig().getList("base_coordinates");
-        //List<Coords> coordsList = new ArrayList<>();
-        //coords.forEach(coord -> coordsList.add(new CoordsUtils().getFromString(coord)));
-        //coordsList.forEach(System.out::println);
-        /// TEST
-        //
+
         //++ загрузка карты,
         // найти спец блоки - генераторы, запомнить корды и тип генераторов
         //
@@ -54,6 +38,10 @@ public class MBedWarsPlugin extends JavaPlugin {
         // с каждым умершим игроком его тиммейтам даются мелкие бонусы в защите+атаке (увеличивается на 0.1 ?)
         // когда остаются люди из 1 тимы - они победили, всех кто еще на сервере кидает в лобби , по центру фигурки этих игроков
         // 15 секунд после победы: стоп сервера
+    }
+
+    public MainHandler getMainHandler(){
+        return mainHandler;
     }
 
     @Override

@@ -1,6 +1,5 @@
 package ua.wteam.mbedwars.handlers;
 
-import org.bukkit.Material;
 import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -9,45 +8,34 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerKickEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 import ua.wteam.mbedwars.MBedWarsPlugin;
-import ua.wteam.mbedwars.kits.Kit;
 import ua.wteam.mbedwars.services.KitService;
-
-import java.util.*;
+import ua.wteam.mbedwars.services.ScoreBoardService;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.function.Consumer;
 
 public class MainHandler implements Listener {
 
     private MBedWarsPlugin main;
     private Map<String, List<Consumer<Event>>> listenersMap;
-
     private KitService kitService;
+    private ScoreBoardService scoreBoardService;
 
 
     public MainHandler(MBedWarsPlugin main) {
         this.main = main;
         listenersMap = new HashMap<String, List<Consumer<Event>>>();
         this.kitService = new KitService(main);
+        this.scoreBoardService = new ScoreBoardService();
 
+
+        //// TEST
         addHandleEventAction("PlayerJoinEvent", event -> {
-            PlayerJoinEvent event1 = (PlayerJoinEvent) event;
-
-            //// TEST
-            ArrayList<ItemStack> kitItems = new ArrayList<>();
-
-            ItemStack itemStack = new ItemStack(Material.COAL_ORE);
-            ItemMeta itemMeta = itemStack.getItemMeta();
-            itemMeta.setDisplayName("§cTest kit");
-            itemStack.setItemMeta(itemMeta);
-
-            kitItems.add(itemStack);
-
-            Kit kit = Kit.newBuilder().addItems(kitItems).addItem(new ItemStack(Material.CARROT_ITEM)).addItem(Material.COAL).build();
-
-            kitService.setKit(kit, event1.getPlayer());
-
+            PlayerJoinEvent eve = (PlayerJoinEvent) event;
+            scoreBoardService.applyScoreboardToPlayer();
         });
 
     }

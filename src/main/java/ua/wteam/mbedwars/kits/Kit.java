@@ -1,6 +1,5 @@
 package ua.wteam.mbedwars.kits;
 
-import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.ArrayList;
@@ -22,16 +21,16 @@ public class Kit {
         return items;
     }
 
-    public Builder newBuilder() {
+    public static Builder newBuilder() {
         return new Builder();
     }
 
-    public class Builder{
+    public static class Builder{
 
         private List<ItemStack> items;
 
         public Builder(){
-            items = new ArrayList<>();
+            this.items = new ArrayList<>();
         }
 
         public Builder addItems(List<ItemStack> items){
@@ -41,11 +40,6 @@ public class Kit {
 
         public Builder addItem(ItemStack item){
             this.items.add(item);
-            return this;
-        }
-
-        public Builder addItem(Material item){
-            this.items.add(new ItemStack(item));
             return this;
         }
 
