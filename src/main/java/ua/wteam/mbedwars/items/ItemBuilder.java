@@ -1,17 +1,21 @@
 package ua.wteam.mbedwars.items;
 
-        import org.bukkit.Material;
-        import org.bukkit.enchantments.Enchantment;
-        import org.bukkit.inventory.ItemFlag;
-        import org.bukkit.inventory.ItemStack;
-        import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.Material;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.inventory.ItemFlag;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
-        import java.util.ArrayList;
-        import java.util.List;
+import java.util.ArrayList;
+import java.util.List;
 
-public class ItemBuilder {
+public  class ItemBuilder {
 
     private ItemStack itemStack;
+
+    public static ItemBuilder newBuilder(){
+        return new ItemBuilder();
+    }
 
     public ItemBuilder material(Material material) {
         itemStack = new ItemStack(material);
@@ -88,7 +92,7 @@ public class ItemBuilder {
     }
 
     public ItemStack build() {
-        if (itemStack == null){
+        if (itemStack == null) {
             return material(Material.AIR).build();
         }
         return itemStack;

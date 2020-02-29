@@ -6,7 +6,7 @@ import ua.wteam.mbedwars.scoreboards.ScoreBoard;
 public class ScoreBoardService {
 
     public void applyScoreboardToPlayer(ScoreBoard scoreBoard, Player player){
-
+        player.setScoreboard(scoreBoard.getScoreboard());
     }
 
 }

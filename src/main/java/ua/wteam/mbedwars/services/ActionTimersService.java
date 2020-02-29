@@ -4,6 +4,7 @@ import ua.wteam.mbedwars.timers.ActionTimer;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class ActionTimersService {
 
@@ -13,12 +14,12 @@ public class ActionTimersService {
         service = Executors.newSingleThreadScheduledExecutor();
     }
 
-    public void scheduleTask(ActionTimer actionTimer) {
-        service.schedule(actionTimer.getAction(), actionTimer.getTime(), actionTimer.getTimeUnit());
+    public void scheduleTask(ActionTimer actionTimer, long time, TimeUnit timeUnit) {
+        service.schedule(actionTimer.getAction(), time, timeUnit);
     }
 
-    public void scheduleRepeatingTask(ActionTimer actionTimer) {
-        service.scheduleAtFixedRate(actionTimer.getAction(), actionTimer.getTime(), actionTimer.getRepeatingPeriod(), actionTimer.getTimeUnit());
+    public void scheduleRepeatingTask(ActionTimer actionTimer, long time, long repeatingPeriod, TimeUnit timeUnit) {
+        service.scheduleAtFixedRate(actionTimer.getAction(), time, repeatingPeriod, timeUnit);
     }
 
     public void stopService() {

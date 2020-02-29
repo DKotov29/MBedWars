@@ -4,6 +4,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.annotation.plugin.Plugin;
 import ua.wteam.mbedwars.handlers.MainHandler;
 import ua.wteam.mbedwars.services.ActionTimersService;
+import ua.wteam.mbedwars.services.GUIService;
 import ua.wteam.mbedwars.services.PerkService;
 
 // todo старт игры командой
@@ -14,6 +15,8 @@ public class MBedWarsPlugin extends JavaPlugin {
     private ActionTimersService actionTimersService;
     private MainHandler mainHandler;
     private PerkService perkService;
+    private DefaultsInitializing defaultsInitializing;
+    private GUIService guiService;
 
     @Override
     public void onEnable() {
@@ -22,7 +25,8 @@ public class MBedWarsPlugin extends JavaPlugin {
         mainHandler = new MainHandler(this);
         getServer().getPluginManager().registerEvents(mainHandler, this);
         perkService = new PerkService(this);
-
+        guiService = new GUIService();
+        defaultsInitializing = new DefaultsInitializing(this);
 
 
         //++ загрузка карты,
@@ -38,9 +42,10 @@ public class MBedWarsPlugin extends JavaPlugin {
         // с каждым умершим игроком его тиммейтам даются мелкие бонусы в защите+атаке (увеличивается на 0.1 ?)
         // когда остаются люди из 1 тимы - они победили, всех кто еще на сервере кидает в лобби , по центру фигурки этих игроков
         // 15 секунд после победы: стоп сервера
+        defaultsInitializing.init();
     }
 
-    public MainHandler getMainHandler(){
+    public MainHandler getMainHandler() {
         return mainHandler;
     }
 
@@ -48,5 +53,17 @@ public class MBedWarsPlugin extends JavaPlugin {
     public void onDisable() {
         saveConfig();
         actionTimersService.stopService();
+    }
+
+    public GUIService getGuiService() {
+        return guiService;
+    }
+
+    public ActionTimersService getActionTimersService() {
+        return actionTimersService;
+    }
+
+    public PerkService getPerkService() {
+        return perkService;
     }
 }

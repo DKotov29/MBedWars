@@ -2,37 +2,33 @@ package ua.wteam.mbedwars.scoreboards;
 
 import org.bukkit.Bukkit;
 import org.bukkit.scoreboard.DisplaySlot;
-import org.bukkit.scoreboard.Score;
+import org.bukkit.scoreboard.Objective;
 import org.bukkit.scoreboard.Scoreboard;
-
-import java.util.TreeMap;
+import org.bukkit.scoreboard.Team;
 
 public class ScoreBoard {
+
     private Scoreboard scoreboard;
+    private Objective objective;
 
-    public ScoreBoard(String scoreboardName) {
-        ScoreBoard.this.scoreboardManager = Bukkit.getScoreboardManager();
-        ScoreBoard.this.scoreboard = scoreboardManager.getNewScoreboard();
-        ScoreBoard.this.objective = scoreboard.registerNewObjective(scoreboardName, "dummy");
-        ScoreBoard.this.objective.setDisplaySlot(DisplaySlot.SIDEBAR);
-        ScoreBoard.this.scores = new TreeMap<>();
+    public ScoreBoard(String scoreboardName){
+        this.scoreboard = Bukkit.getScoreboardManager().getNewScoreboard();
+        this.objective = scoreboard.registerNewObjective(scoreboardName, "dummy");
+        this.objective.setDisplaySlot(DisplaySlot.SIDEBAR);
     }
 
-    public void addLine(String value) {
-        ScoreBoard.this.scores.put(scores.size(), value);
+    public Scoreboard getScoreboard(){
+        return scoreboard;
+    }
+
+    public ScoreBoard addLine(String teamIndent, String value){
+        Team team = scoreboard.registerNewTeam(teamIndent);
+        team.addEntry(value);
+        objective.getScore("").setScore(0);
         return this;
     }
 
-    public void editLine(int key, String value) {
-        ScoreBoard.this.scores.replace(key, value);
+    public ScoreBoard build(){
         return this;
-    }
-
-    public ScoreBoard build() {
-        scores.forEach((key, value) -> {
-            Score score = objective.getScore(value);
-            score.setScore(key);
-        });
-        return ScoreBoard.this;
     }
 }
