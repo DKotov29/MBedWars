@@ -6,11 +6,13 @@ import org.bukkit.scoreboard.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class ScoreBoardManager {
 
     private Scoreboard scoreboard;
     private Objective objective;
+    private Map<String, Scoreboard> scoreboards;
     private List<Score> scores;
 
     public ScoreBoardManager(String scoreboardName){

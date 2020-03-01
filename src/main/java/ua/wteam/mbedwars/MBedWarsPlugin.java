@@ -3,7 +3,7 @@ package ua.wteam.mbedwars;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.annotation.plugin.Plugin;
 import ua.wteam.mbedwars.handlers.MainHandler;
-import ua.wteam.mbedwars.services.ActionTimersService;
+import ua.wteam.mbedwars.services.AsyncService;
 import ua.wteam.mbedwars.services.GUIService;
 import ua.wteam.mbedwars.services.PerkService;
 
@@ -12,7 +12,7 @@ import ua.wteam.mbedwars.services.PerkService;
 @Plugin(name = "MBedWars", version = "1.0")
 public class MBedWarsPlugin extends JavaPlugin {
 
-    private ActionTimersService actionTimersService;
+    private AsyncService asyncService;
     private MainHandler mainHandler;
     private PerkService perkService;
     private DefaultsInitializing defaultsInitializing;
@@ -21,7 +21,7 @@ public class MBedWarsPlugin extends JavaPlugin {
     @Override
     public void onEnable() {
         saveDefaultConfig();
-        actionTimersService = new ActionTimersService();
+        asyncService = new AsyncService();
         mainHandler = new MainHandler(this);
         getServer().getPluginManager().registerEvents(mainHandler, this);
         perkService = new PerkService(this);
@@ -52,15 +52,15 @@ public class MBedWarsPlugin extends JavaPlugin {
     @Override
     public void onDisable() {
         saveConfig();
-        actionTimersService.stopService();
+        asyncService.stopService();
     }
 
     public GUIService getGuiService() {
         return guiService;
     }
 
-    public ActionTimersService getActionTimersService() {
-        return actionTimersService;
+    public AsyncService getAsyncService() {
+        return asyncService;
     }
 
     public PerkService getPerkService() {

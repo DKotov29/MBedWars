@@ -26,4 +26,6 @@ public class KitService {
         player.getInventory().clear();
         kit.getItems().forEach(player.getInventory()::addItem);
     }
+
+
 }
