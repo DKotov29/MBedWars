@@ -31,16 +31,19 @@ public class GUI {
         }
     }
 
+
+
     public void setButtonToPosition(GUIButton guiButton, int position) {
+        System.out.println(guiButtons);
         if (position < 0 || position > guiButtons.length) {
             return;
         }
         this.guiButtons[position] = guiButton;
     }
 
-    public int findEmptyPosition() {
+    private int findEmptyPosition() {
         for (int i = 0; i < guiButtons.length; i++) {
-            if (guiButtons[i] != null) {
+            if (guiButtons[i] == null) {
                 return i;
             }
         }

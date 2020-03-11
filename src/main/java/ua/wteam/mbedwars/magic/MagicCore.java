@@ -8,6 +8,6 @@ public class MagicCore {
     private Coords coords;
     private Animation animation;
 
-
-
+    public MagicCore() {
+    }
 }

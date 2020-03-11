@@ -1,6 +1,5 @@
 package ua.wteam.mbedwars.handlers;
 
-import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
@@ -8,13 +7,15 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
-import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.event.player.PlayerKickEvent;
-import org.bukkit.event.player.PlayerMoveEvent;
-import org.bukkit.event.player.PlayerQuitEvent;
+import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.event.inventory.InventoryDragEvent;
+import org.bukkit.event.inventory.InventoryMoveItemEvent;
+import org.bukkit.event.inventory.InventoryPickupItemEvent;
+import org.bukkit.event.player.*;
 import ua.wteam.mbedwars.MBedWarsPlugin;
-import ua.wteam.mbedwars.managers.ScoreBoardManager;
+import ua.wteam.mbedwars.services.AsyncService;
 import ua.wteam.mbedwars.services.KitService;
+import ua.wteam.mbedwars.utils.ScoreBoard;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,7 +28,8 @@ public class MainHandler implements Listener {
     private MBedWarsPlugin main;
     private Map<String, List<Consumer<Event>>> listenersMap;
     private KitService kitService;
-    private ScoreBoardManager scoreBoardManager;
+    private ScoreBoard scoreBoard;
+    AsyncService asyncService = new AsyncService();
 
 
     public MainHandler(MBedWarsPlugin main) {
@@ -35,29 +37,14 @@ public class MainHandler implements Listener {
         listenersMap = new HashMap<>();
         this.kitService = new KitService(main);
 
-        //// TEST
         addHandleEventAction("PlayerJoinEvent", event -> {
             PlayerJoinEvent joinEvent = (PlayerJoinEvent) event;
-
-            this.scoreBoardManager = new ScoreBoardManager("§cMBedWars");
-
-            List<String> scores = new ArrayList<>();
             Player player = joinEvent.getPlayer();
-            scores.add("Player name: " + player.getName());
-            scores.add("---");
-            scores.add("XYZ: " + "here coords");
-            scoreBoardManager.addLines(scores);
-            scoreBoardManager.updateForPlayer(player);
+            player.sendMessage("§7[§a+§7] " + player.getName());
         });
-
-        addHandleEventAction("PlayerMoveEvent", moveEvent -> {
-
-            PlayerMoveEvent playerMoveEvent = (PlayerMoveEvent) moveEvent;
-            Player player = playerMoveEvent.getPlayer();
-            Location playerLocation = player.getLocation();
-            scoreBoardManager.editLine(2, "XYZ: " + Math.round(playerLocation.getX()) + " " +
-                    Math.round(playerLocation.getY()) + " " + Math.round(playerLocation.getZ()));
-            scoreBoardManager.updateForPlayer(player);
+        addHandleEventAction("PlayerQuitEvent", event -> {
+            PlayerJoinEvent joinEvent = (PlayerJoinEvent) event;
+            joinEvent.getPlayer().sendMessage("§7[§a-§7] " + joinEvent.getPlayer().getName());
         });
     }
 
@@ -82,6 +69,7 @@ public class MainHandler implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
+        asyncService.submitTask(() -> main.getGameLogic().playerJoined(event.getPlayer()));
         handleEventAction(event);
     }
 
@@ -90,8 +78,15 @@ public class MainHandler implements Listener {
         handleEventAction(event);
     }
 
+
+
     @EventHandler
     public void onPlayerQuit(PlayerQuitEvent event) {
+        handleEventAction(event);
+    }
+
+    @EventHandler
+    public void onChatEvent(AsyncPlayerChatEvent event) {
         handleEventAction(event);
     }
 
@@ -114,4 +109,33 @@ public class MainHandler implements Listener {
     public void onPlayerMove(PlayerMoveEvent event) {
         handleEventAction(event);
     }
+
+    @EventHandler
+    public void onPlayerInteract(PlayerInteractEvent event) {
+        handleEventAction(event);
+    }
+
+    // <InventoryEvents>
+    @EventHandler
+    public void onInventoryClick(InventoryClickEvent event) {
+        handleEventAction(event);
+        // проверить наш ли инвентарь
+        // если наш взять действие заложенное в кнопке
+    }
+
+    @EventHandler
+    public void onInventoryMoveItem(InventoryMoveItemEvent event) {
+
+    }
+
+    @EventHandler
+    public void onInventoryMoveItem(InventoryPickupItemEvent event) {
+
+    }
+
+    @EventHandler
+    public void onInventoryMoveItem(InventoryDragEvent event) {
+
+    }
+    // </InventoryEvents>
 }

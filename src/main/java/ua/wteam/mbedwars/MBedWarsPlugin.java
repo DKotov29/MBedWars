@@ -1,8 +1,16 @@
 package ua.wteam.mbedwars;
 
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.Particle;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.annotation.plugin.Plugin;
+import ua.wteam.mbedwars.animations.Animation;
+import ua.wteam.mbedwars.animations.AnimationLevel;
+import ua.wteam.mbedwars.animations.AnimationType;
 import ua.wteam.mbedwars.handlers.MainHandler;
+import ua.wteam.mbedwars.logic.GameLogic;
+import ua.wteam.mbedwars.logic.MagicBedWarsGameLogic;
 import ua.wteam.mbedwars.services.AsyncService;
 import ua.wteam.mbedwars.services.GUIService;
 import ua.wteam.mbedwars.services.PerkService;
@@ -17,6 +25,9 @@ public class MBedWarsPlugin extends JavaPlugin {
     private PerkService perkService;
     private DefaultsInitializing defaultsInitializing;
     private GUIService guiService;
+    private Animation animation;
+    private GameLogic gameLogic;
+    private Animation animation2;
 
     @Override
     public void onEnable() {
@@ -27,6 +38,21 @@ public class MBedWarsPlugin extends JavaPlugin {
         perkService = new PerkService(this);
         guiService = new GUIService();
         defaultsInitializing = new DefaultsInitializing(this);
+        gameLogic = new MagicBedWarsGameLogic(this);
+
+
+     //   getServer().getPluginManager().registerEvents(new Test(), this);
+
+
+        // Test
+
+        animation = new Animation(Particle.FLAME, new Location(Bukkit.getWorld("world"),-108,62,740));
+        animation.init(AnimationType.SPHERE, AnimationLevel.ANIMATION_LEVEL_1);
+        animation.draw();
+
+        animation2 = new Animation(Particle.END_ROD, new Location(Bukkit.getWorld("world"),-120,86 ,644));
+        animation2.init(AnimationType.SPHERE, AnimationLevel.ANIMATION_LEVEL_1);
+        animation2.draw();
 
 
         //++ загрузка карты,
@@ -65,5 +91,9 @@ public class MBedWarsPlugin extends JavaPlugin {
 
     public PerkService getPerkService() {
         return perkService;
+    }
+
+    public GameLogic getGameLogic() {
+        return gameLogic;
     }
 }
